@@ -30,6 +30,7 @@
             font-family: interstate, Arial, sans-serif;
             font-size: 10em;
             color: aliceblue;
+            text-shadow: 2px 2px #000000;
         }
     </style>
 </head>
