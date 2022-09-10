@@ -58,9 +58,6 @@
     }, 1000);
 </script>
 <div class="bg">
-    <div class="center">
-        <iframe src="https://html.duckduckgo.com/html/"></iframe>
-    </div>
     <div class="time">
         <span id="theTime"><?php
             $tz = 'America/New_York';
