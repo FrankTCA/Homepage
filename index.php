@@ -34,16 +34,14 @@
 </head>
 <body>
 <script>
-    $(document).ready(function() {
+    let currentDate = new Date();
+    let time = currentDate.getHours() + ":" + currentDate.getMinutes();
+    $('#theTime').innerText = time;
+    setInterval(function() {
         let currentDate = new Date();
         let time = currentDate.getHours() + ":" + currentDate.getMinutes();
         $('#theTime').innerText = time;
-        setInterval(function() {
-            let currentDate = new Date();
-            let time = currentDate.getHours() + ":" + currentDate.getMinutes();
-            $('#theTime').innerText = time;
-        }, 1000);
-    })
+    }, 1000);
 </script>
 <div class="bg">
     <div class="time">
