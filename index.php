@@ -2,6 +2,7 @@
 <html>
 <head>
     <script src="js/jquery-3.6.1.min.js"></script>
+    <link rel="stylesheet" href="https://use.typekit.net/avi3kdp.css">
     <style>
         * {
             margin: 0;
@@ -26,7 +27,7 @@
             right: 0;
         }
         #theTime {
-            font-family: Arial, sans-serif;
+            font-family: interstate, Arial, sans-serif;
             font-size: 10em;
             color: aliceblue;
         }
