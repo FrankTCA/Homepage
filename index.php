@@ -21,6 +21,18 @@
             height: 100%;
 
         }
+        .center {
+            position: absolute;
+            margin: auto;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            width: 100px;
+            height: 100px;
+            background-color: #ccc;
+            border-radius: 3px;
+        }
         .time {
             position: absolute;
             bottom: 0;
@@ -33,6 +45,7 @@
             text-shadow: 2px 2px #000000;
         }
     </style>
+    <link rel="stylesheet" media="handheld, all" href="//duckduckgo.com/h2085.css" type="text/css" />
 </head>
 <body>
 <script>
@@ -47,27 +60,6 @@
 </script>
 <div class="bg">
     <div class="center">
-
-        <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-
-        <!--[if IE 6]><html class="ie6" xmlns="http://www.w3.org/1999/xhtml"><![endif]-->
-        <!--[if IE 7]><html class="lt-ie8 lt-ie9" xmlns="http://www.w3.org/1999/xhtml"><![endif]-->
-        <!--[if IE 8]><html class="lt-ie9" xmlns="http://www.w3.org/1999/xhtml"><![endif]-->
-        <!--[if gt IE 8]><!--><html xmlns="http://www.w3.org/1999/xhtml"><!--<![endif]-->
-        <head>
-            <link rel="canonical" href="https://duckduckgo.com/" />
-            <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-            <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=3.0, user-scalable=1" />
-            <meta name="referrer" content="origin" />
-            <title>DuckDuckGo</title>
-            <link title="DuckDuckGo (HTML)" type="application/opensearchdescription+xml" rel="search" href="//duckduckgo.com/opensearch_html_v2.xml" />
-            <link rel="icon" href="//duckduckgo.com/favicon.ico" type="image/x-icon" />
-            <link rel="apple-touch-icon" href="//duckduckgo.com/assets/logo_icon128.v101.png" />
-            <link rel="image_src" href="//duckduckgo.com/assets/logo_homepage.normal.v101.png" />
-            <link rel="stylesheet" media="handheld, all" href="//duckduckgo.com/h2085.css" type="text/css" />
-        </head>
-
-        <body class="body--home body--html">
         <div class="header-wrap--home"></div>
         <div id="content_wrapper_homepage" class="content-wrap--home">
             <div id="content_homepage" class="content--home">
