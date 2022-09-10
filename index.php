@@ -3,6 +3,10 @@
 <head>
     <script src="js/jquery-3.6.1.min.js"></script>
     <style>
+        html, body {
+            height: 100%;
+            width: 100%;
+        }
         .bg {
             background-image: url("https://imgdrop.infotoast.org/crimages/<?php
             echo rand(0, 606);
