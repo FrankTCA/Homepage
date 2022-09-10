@@ -45,7 +45,6 @@
             text-shadow: 2px 2px #000000;
         }
     </style>
-    <link rel="stylesheet" media="handheld, all" href="//duckduckgo.com/h2085.css" type="text/css" />
 </head>
 <body>
 <script>
@@ -60,37 +59,7 @@
 </script>
 <div class="bg">
     <div class="center">
-        <div class="header-wrap--home"></div>
-        <div id="content_wrapper_homepage" class="content-wrap--home">
-            <div id="content_homepage" class="content--home">
-                <div class="logo-wrap--home">
-                    <a title="About DuckDuckGo" class="logo_homepage" href="//duckduckgo.com/about.html">About DuckDuckGo</a>
-                </div>
-                <div class="search-wrap--home">
-                    <form name="x" id="search_form_homepage" class="search" action="https://html.duckduckgo.com/html/" method="post">
-
-                        <input name="q" autocomplete="off" id="search_form_input_homepage" class="search__input" type="text" autofocus />
-
-                        <input name="b" id="search_button_homepage" class="search__button search__button--html" value="" title="Search" alt="Search" type="submit" />
-
-
-
-
-
-
-                    </form>
-                </div>
-
-                <!--[if IE 6]>
-                <p class="text-center">This browser is not supported. Please visit <a href="/lite">/lite</a>.</p>
-                <![endif]-->
-
-                <div id="html-only-notice">
-                    <!--          This is the HTML version. Get the JS version <a href="https://duckduckgo.com/">here</a>. //-->
-                </div>
-
-            </div> <!-- id="content_homepage" -->
-        </div> <!-- id="content_wrapper_homepage" -->
+        <iframe src="https://html.duckduckgo.com/html/"></iframe>
     </div>
     <div class="time">
         <span id="theTime"><?php
