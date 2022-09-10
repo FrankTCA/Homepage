@@ -29,9 +29,11 @@
         })
     </script>
 </head>
-<body class="bg">
-<div class="time">
-    <span id="theTime"></span>
+<body>
+<div class="bg">
+    <div class="time">
+        <span id="theTime"></span>
+    </div>
 </div>
 </body>
 </html>
