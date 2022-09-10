@@ -45,7 +45,13 @@
 </script>
 <div class="bg">
     <div class="time">
-        <span id="theTime"></span>
+        <span id="theTime"><?php
+            $tz = 'America/New_York';
+            $tz_obj = new DateTimeZone($tz);
+            $today = new DateTime("now", $tz_obj);
+            $today_formatted = $today->format('H-i');
+            echo $today_formatted;
+        ?></span>
     </div>
 </div>
 </body>
