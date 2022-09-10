@@ -7,6 +7,7 @@
             background-image: url("https://imgdrop.infotoast.org/crimages/<?php
             echo rand(0, 606);
 ?>.jpg");
+            background-size: 100% 100%;
         }
         .time {
             position: absolute;
