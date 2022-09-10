@@ -8,6 +8,8 @@
             echo rand(0, 606);
 ?>.jpg");
             background-size: 100% 100%;
+            width: 100%;
+            height: 100%;
         }
         .time {
             position: absolute;
