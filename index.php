@@ -45,7 +45,6 @@
             text-shadow: 2px 2px #000000;
         }
     </style>
-    <link rel="stylesheet" media="handheld, all" href="//duckduckgo.com/h2085.css" type="text/css" />
 </head>
 <body>
 <script>
@@ -67,7 +66,7 @@
                     <a title="About DuckDuckGo" class="logo_homepage" href="//duckduckgo.com/about.html">About DuckDuckGo</a>
                 </div>
                 <div class="search-wrap--home">
-                    <form name="x" id="search_form_homepage" class="search" action="/html/" method="post">
+                    <form name="x" id="search_form_homepage" class="search" action="https://html.duckduckgo.com/html/" method="post">
 
                         <input name="q" autocomplete="off" id="search_form_input_homepage" class="search__input" type="text" autofocus />
 
@@ -91,8 +90,6 @@
 
             </div> <!-- id="content_homepage" -->
         </div> <!-- id="content_wrapper_homepage" -->
-        </body>
-        </html>
     </div>
     <div class="time">
         <span id="theTime"><?php
