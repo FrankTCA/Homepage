@@ -36,11 +36,11 @@
 <script>
     let currentDate = new Date();
     let time = currentDate.getHours() + ":" + currentDate.getMinutes();
-    $('#theTime').innerText = time;
+    document.getElementById("theTime").innerText = time;
     setInterval(function() {
         let currentDate = new Date();
         let time = currentDate.getHours() + ":" + currentDate.getMinutes();
-        $('#theTime').innerText = time;
+        document.getElementById("theTime").innerText = time;
     }, 1000);
 </script>
 <div class="bg">
