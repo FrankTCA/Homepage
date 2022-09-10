@@ -25,17 +25,17 @@
             font-size: xxx-large;
         }
     </style>
-    <script>
-        $(document).ready(function() {
-            setInterval(function() {
-                let currentDate = new Date();
-                let time = currentDate.getHours() + ":" + currentDate.getMinutes();
-                $('#theTime').innerText = time;
-            })
-        })
-    </script>
 </head>
 <body>
+<script>
+    $(document).ready(function() {
+        setInterval(function() {
+            let currentDate = new Date();
+            let time = currentDate.getHours() + ":" + currentDate.getMinutes();
+            $('#theTime').innerText = time;
+        })
+    })
+</script>
 <div class="bg">
     <div class="time">
         <span id="theTime"></span>
