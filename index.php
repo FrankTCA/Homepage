@@ -28,8 +28,8 @@
             right: 0;
             bottom: 0;
             left: 0;
-            width: 100px;
-            height: 100px;
+            width: 500px;
+            height: 500px;
             background-color: #ccc;
             border-radius: 3px;
         }
