@@ -38,7 +38,7 @@
             let currentDate = new Date();
             let time = currentDate.getHours() + ":" + currentDate.getMinutes();
             $('#theTime').innerText = time;
-        })
+        }, 1000);
     })
 </script>
 <div class="bg">
