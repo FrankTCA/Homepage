@@ -3,9 +3,13 @@
 <head>
     <script src="js/jquery-3.6.1.min.js"></script>
     <style>
+        * {
+            margin: 0;
+        }
         html, body {
             height: 100%;
             width: 100%;
+            overflow: hidden;
         }
         .bg {
             background-image: url("https://imgdrop.infotoast.org/crimages/<?php
@@ -14,6 +18,7 @@
             background-size: 100% 100%;
             width: 100%;
             height: 100%;
+
         }
         .time {
             position: absolute;
