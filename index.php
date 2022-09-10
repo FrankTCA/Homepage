@@ -27,7 +27,7 @@
         }
         #theTime {
             font-family: Arial, sans-serif;
-            font-size: 30em;
+            font-size: 10em;
             color: aliceblue;
         }
     </style>
@@ -49,7 +49,7 @@
             $tz = 'America/New_York';
             $tz_obj = new DateTimeZone($tz);
             $today = new DateTime("now", $tz_obj);
-            $today_formatted = $today->format('H-i');
+            $today_formatted = $today->format('H:i');
             echo $today_formatted;
         ?></span>
     </div>
