@@ -45,6 +45,7 @@
             text-shadow: 2px 2px #000000;
         }
     </style>
+    <link rel="stylesheet" media="handheld, all" href="//duckduckgo.com/h2085.css" type="text/css" />
 </head>
 <body>
 <script>
