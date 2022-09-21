@@ -51,7 +51,14 @@ if ($err) {
         CURLOPT_MAXREDIRS => 10,
         CURLOPT_TIMEOUT => 30,
         CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
-
+        CURLOPT_CUSTOMREQUEST => "POST",
+        CURLOPT_POSTFIELDS => "{\n    \"city\": \"Boston\",\n    \"country\": \"MA\"\n}",
+        CURLOPT_HTTPHEADER => [
+            "X-RapidAPI-Host: weather-embed.p.rapidapi.com",
+            "X-RapidAPI-Key: 0fdce3b09bmsh8a70480fbaf5910p1035c4jsn6067f3444d41",
+            "content-type: application/json",
+            "x-rapidapi-forward-key: RapidAPI Application Key"
+        ],
     ]);
     $imgdata = curl_exec($curl2);
     $err2 = curl_error($curl2);
