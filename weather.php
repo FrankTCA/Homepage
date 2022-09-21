@@ -40,7 +40,27 @@ curl_close($curl);
 if ($err) {
     echo "cURL Error #:" . $err;
 } else {
-    $file = fopen($filename, "w") or die("Unable to open file for writing!");
-    fwrite($file, $response);
-    echo $response;
+    $json = json_decode($response);
+    $url = $json->url;
+    $curl2 = curl_init();
+    curl_setopt_array($curl2, [
+        CURLOPT_URL => $url,
+        CURLOPT_RETURNTRANSFER => true,
+        CURLOPT_FOLLOWLOCATION => true,
+        CURLOPT_ENCODING => "",
+        CURLOPT_MAXREDIRS => 10,
+        CURLOPT_TIMEOUT => 30,
+        CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+
+    ]);
+    $imgdata = curl_exec($curl2);
+    $err2 = curl_error($curl2);
+    curl_close($curl2);
+    if ($err2) {
+        die("cURL Error!" . $err2);
+    } else {
+        $file = fopen($filename, "w") or die("Unable to open file for writing!");
+        fwrite($file, $imgdata);
+        echo $imgdata;
+    }
 }
