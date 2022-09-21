@@ -1,6 +1,6 @@
 <?php
 
-$tz = 'America/New York';
+$tz = 'America/New_York';
 $tz_obj = new DateTimeZone();
 $today = new DateTime("now", $tz_obj);
 $today_formatted = $today->format("z-o-H");
