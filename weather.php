@@ -51,6 +51,7 @@ if ($err) {
         CURLOPT_MAXREDIRS => 10,
         CURLOPT_TIMEOUT => 30,
         CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+        CURLOPT_CUSTOMREQUEST => "POST",
         CURLOPT_HTTPHEADER => [
             "X-RapidAPI-Host: weather-embed.p.rapidapi.com",
             "X-RapidAPI-Key: 0fdce3b09bmsh8a70480fbaf5910p1035c4jsn6067f3444d41",
