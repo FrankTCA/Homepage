@@ -44,6 +44,12 @@
             color: aliceblue;
             text-shadow: 2px 2px #000000;
         }
+        #theDate {
+            font-family: interstate, Arial, sans-serif;
+            font-size: 2em;
+            color: aliceblue;
+            text-shadow: 2px 2px #000000;
+        }
     </style>
 </head>
 <body>
@@ -59,6 +65,15 @@
 </script>
 <div class="bg">
     <div class="time">
+        <span id="theDate"><?php
+            $tz = 'America/New York';
+            $tz_obj = new DateTimeZone($tz);
+            $today = new DateTime("now", $tz_obj);
+            $today_formatted = $today->format('l, F j');
+            echo $today_formatted;
+            ?>
+        </span>
+        <br>
         <span id="theTime"><?php
             $tz = 'America/New_York';
             $tz_obj = new DateTimeZone($tz);
