@@ -60,6 +60,7 @@
         console.log(tz_offset);
 
         $.get("get_date_time.php", {offset: tz_offset}, function(data, status) {
+            console.log(data);
             $(".time").innerHTML = data;
         })
     })
