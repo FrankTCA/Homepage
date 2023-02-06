@@ -54,33 +54,18 @@
 </head>
 <body>
 <script>
-    let currentDate = new Date();
-    let time = currentDate.getHours() + ":" + currentDate.getMinutes();
-    document.getElementById("theTime").innerText = time;
-    setInterval(function() {
-        let currentDate = new Date();
-        let time = currentDate.getHours() + ":" + currentDate.getMinutes();
-        document.getElementById("theTime").innerText = time;
-    }, 1000);
+    $(document).ready(function() {
+        var tz_offset = new Date().getTimezoneOffset();
+        tz_offset = tz_offset == 0 ? 0 : -tz_offset;
+        console.log(tz_offset);
+
+        $.get("get_date_time.php", {offset: tz_offset}, function(data, status) {
+            $(".time").innerHTML = data;
+        })
+    })
 </script>
 <div class="bg">
     <div class="time">
-        <span id="theDate"><?php
-            $tz = 'America/New_York';
-            $tz_obj = new DateTimeZone($tz);
-            $today = new DateTime("now", $tz_obj);
-            $today_formatted = $today->format('l, F j');
-            echo $today_formatted;
-            ?>
-        </span>
-        <br>
-        <span id="theTime"><?php
-            $tz = 'America/New_York';
-            $tz_obj = new DateTimeZone($tz);
-            $today = new DateTime("now", $tz_obj);
-            $today_formatted = $today->format('H:i');
-            echo $today_formatted;
-        ?></span>
     </div>
 </div>
 </body>
