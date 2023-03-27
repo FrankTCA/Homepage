@@ -5,7 +5,7 @@ if (!isset($_GET['offset'])) {
 
 $offset = $_GET['offset'];
 
-$timezone_name = timezone_name_from_abbr("", $offset*60, false);
+$timezone_name = timezone_name_from_abbr("", $offset*60-60, false);
 
 $tz_obj = new DateTimeZone($timezone_name);
 
