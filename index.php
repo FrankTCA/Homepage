@@ -14,7 +14,7 @@
         }
         .bg {
             background-image: url("https://infotoast.org/images/<?php
-            echo rand(0, 396);
+            echo rand(0, 93);
 ?>.jpg");
             background-size: 100% 100%;
             width: 100%;
