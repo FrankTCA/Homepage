@@ -13,7 +13,7 @@
             overflow: hidden;
         }
         .bg {
-            background-image: url("https://imgdrop.infotoast.org/hiresbg/<?php
+            background-image: url("https://infotoast.org/images/<?php
             echo rand(0, 396);
 ?>.jpg");
             background-size: 100% 100%;
