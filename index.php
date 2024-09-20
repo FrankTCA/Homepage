@@ -2,7 +2,7 @@
 <html>
 <head>
     <script src="js/jquery-3.6.1.min.js"></script>
-    <link rel="stylesheet" href="https://use.typekit.net/avi3kdp.css">
+    <link type="text/css" rel="stylesheet" href="/global-resources/mallory.css">
     <style>
         * {
             margin: 0;
@@ -39,13 +39,13 @@
             right: 0;
         }
         #theTime {
-            font-family: interstate, Arial, sans-serif;
+            font-family: Mallory-Medium, Arial, sans-serif;
             font-size: 10em;
             color: aliceblue;
             text-shadow: 2px 2px #000000;
         }
         #theDate {
-            font-family: interstate, Arial, sans-serif;
+            font-family: Mallory-Medium, Arial, sans-serif;
             font-size: 2em;
             color: aliceblue;
             text-shadow: 2px 2px #000000;
