@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <script src="js/jquery-3.6.1.min.js"></script>
+    <!-- We no longer need jQuery -->
+    <!-- <script src="js/jquery-3.6.1.min.js"></script> -->
     <link type="text/css" rel="stylesheet" href="/global-resources/mallory.css">
     <style>
         * {
@@ -15,7 +16,7 @@
         .bg {
             background-image: url("https://infotoast.org/images/<?php
             echo rand(0, 308);
-?>.jpg");
+?>.webp");
             background-size: 100% 100%;
             width: 100%;
             height: 100%;
@@ -54,19 +55,35 @@
 </head>
 <body>
 <script>
-    $(document).ready(function() {
-        var tz_offset = new Date().getTimezoneOffset();
-        tz_offset = tz_offset == 0 ? 0 : -tz_offset;
-        console.log(tz_offset);
+    const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+    const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 
-        $.get("get_date_time.php", {offset: tz_offset}, function(data, status) {
-            console.log(data);
-            $(".time").html(data);
-        })
-    })
+    const d = new Date();
+    let month = months[d.getMonth()];
+    let day = days[d.getDay()];
+    let date = d.getDate();
+
+    let hours = d.getHours();
+    let minutes = d.getMinutes();
+
+    document.getElementById("theDate").innerHTML = day + ", " + month + " " + date;
+    document.getElementById("theTime").innerHTML = hours + ":" + minutes;
+
+    // Legacy code for when server would provide the time
+    /*var tz_offset = new Date().getTimezoneOffset();
+    tz_offset = tz_offset == 0 ? 0 : -tz_offset;
+    console.log(tz_offset);
+
+    $.get("get_date_time.php", {offset: tz_offset}, function(data, status) {
+        console.log(data);
+        $(".time").html(data);
+    })*/
 </script>
 <div class="bg">
     <div class="time">
+        <span id="theDate"></span>
+        <br>
+        <span id="theTime"></span>
     </div>
 </div>
 </body>
