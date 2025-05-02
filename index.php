@@ -66,6 +66,18 @@
     let hours = d.getHours();
     let minutes = d.getMinutes();
 
+    if (hours < 10) {
+        hours = "0" + hours;
+    } else {
+        hours = "" + hours;
+    }
+
+    if (minutes < 10) {
+        minutes = "0" + minutes;
+    } else {
+        minutes = "" + minutes;
+    }
+
     document.getElementById("theDate").innerHTML = day + ", " + month + " " + date;
     document.getElementById("theTime").innerHTML = hours + ":" + minutes;
 
