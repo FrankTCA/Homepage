@@ -15,8 +15,20 @@
         }
         .bg {
             background-image: url("https://infotoast.org/images/<?php
-            echo rand(0, 308);
-?>.webp");
+                function get_random_image_num(): int {
+                    $num_str = file_get_contents("http://infotoast.org/images/num.txt");
+
+                    $num = $num_str == false ? 0 : intval($num_str);
+                    $rand = rand(0, $num);
+                    if ($rand == 98) {
+                        return get_random_image_num();
+                    }
+
+                    return $rand;
+                }
+
+                echo get_random_image_num();
+            ?>.webp");
             background-size: 100% 100%;
             width: 100%;
             height: 100%;
