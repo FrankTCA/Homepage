@@ -66,6 +66,13 @@
     </style>
 </head>
 <body>
+<div class="bg">
+    <div class="time">
+        <span id="theDate"></span>
+        <br>
+        <span id="theTime"></span>
+    </div>
+</div>
 <script>
     const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
     const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
@@ -90,8 +97,8 @@
         minutes = "" + minutes;
     }
 
-    document.getElementById("theDate").innerHTML = day + ", " + month + " " + date;
-    document.getElementById("theTime").innerHTML = hours + ":" + minutes;
+    theDate.innerHTML = day + ", " + month + " " + date;
+    theTime.innerHTML = hours + ":" + minutes;
 
     // Legacy code for when server would provide the time
     /*var tz_offset = new Date().getTimezoneOffset();
@@ -103,12 +110,5 @@
         $(".time").html(data);
     })*/
 </script>
-<div class="bg">
-    <div class="time">
-        <span id="theDate"></span>
-        <br>
-        <span id="theTime"></span>
-    </div>
-</div>
 </body>
 </html>
